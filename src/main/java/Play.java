@@ -27,7 +27,7 @@ public class Play {
 			String city = String.valueOf(cityDictionary.get(i));
 
 			if (!isCityUsed(city, usedCityList) && compareLastLetterWithFirstLetter(previousCity, city)) {
-				System.out.println("Ход компьютера: " + '\n' + city);
+				System.out.println("Computer" + '\n' + city);
 				computerCity = city.toUpperCase();
 				usedCityList.add(computerCity);
 				break;
@@ -37,7 +37,7 @@ public class Play {
 
 	public void checkExitString(String inputString) {
 		if (EXIT.equalsIgnoreCase(inputString)) {
-			System.out.println("Игра была прервана ползователем!!!");
+			System.out.println("пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ!!!");
 			System.exit(0);
 		}
 	}

@@ -12,7 +12,7 @@ public class Main {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
 		while (true) {
-			System.out.println("Твой ход:");
+			System.out.println("Your turn:");
 			String userCity = reader.readLine();
 			play.checkExitString(userCity);
 
@@ -25,13 +25,12 @@ public class Main {
 					usedCityList.add(userCity.toUpperCase());
 					play.computersFindsCity(usedCityList, userCity);
 				} else if (!isFirstLetterAppropriate) {
-					System.out.println("Пользователь, не мухлюй, введи город, который будет начинаться на ту букву, "
-							+ "которая была последней в моем городе!!!!");
+					System.out.println("FALSE! The name of the city stars with an invalid character!!!");
 				} else {
-					System.out.println("Пользователь, такой город уже был, повтори попытку!!!!");
+					System.out.println("FALSE!! You have already used this name of the city!!!!!!!!");
 				}
 			} else {
-				System.out.println("Пользователь, что за ерунду ты пишешь, такого города не существует!!!!");
+				System.out.println("FALSE!!! There is no such city!!!!");
 			}
 		}
 	}
